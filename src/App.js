@@ -29,7 +29,7 @@ componentWillMount(){
   // Configure the credentials provider to use your identity pool
   AWS.config.region = REGION; // Region
   AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'eu-west-1:dca45b10-db92-494c-aec7-4079336aed07',
+    IdentityPoolId: '<Your identity pool>',
   });
   // Make the call to obtain credentials
   AWS.config.credentials.get(function () {
